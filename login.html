@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login yumyum</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1>Welcome To  <span> YumYum</span> Hub</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipe.html">Catogaries</a></li>
+               
+                
+            </ul>
+
+          
+        </nav>
+    </header>
+
+    <div class="container" id="container">
+        <div class="form-container register">
+            <form >
+                <h1>Register</h1>
+
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <button>Register</button>
+                <span>Or Register With </span>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-github' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                    <a href="#"><i class='bx bxl-google' ></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container login">
+            <form >
+                <h1>Login</h1>
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <a href="#">Forgot Your Password?</a>
+                <button>Login</button>
+                <span>Or Register With </span>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-github' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                    <a href="#"><i class='bx bxl-google' ></i></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel left">
+                    <h1>Welcome Back</h1>
+                    <p>Login To The Website</p>
+                    <button class="hidden" id="login">Login</button>
+                </div>
+                <div class="toggle-panel right">
+                    <h2>Hi Welcome to Our Website</h2>
+                    <p>Register to Use Website</p>
+                    <button class="hidden" id="register">Register</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+<script src="login.js"></script>
+
+    
+</body>
+</html>

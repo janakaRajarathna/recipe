@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Recipe Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <h1><span>YumYum</span> Hub</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="recipe.html">Catogaries</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                
+            </ul>
+
+            <button class="login-btn" onclick="location.href='login.html'">Login</button>
+        </nav>
+    </header>
+   
+    <main>
+        <section id="Home">
+            
+            <div class="home-content">
+                <h2>Welcome to <span>Our Recipe Haven</span></h2>
+                <p>
+                    Discover a world of culinary delights with our collection of delicious and easy-to-follow recipes.
+                     Whether you're in the mood for a quick weeknight dinner or planning a special feast, 
+                     our curated recipes are designed to inspire and delight. Let's make cooking an enjoyable adventure!
+                </p>
+                <button id="ctgr-btn"  onclick="location.href='recipe.html'">Catogaries</button>
+            </div>
+
+            <div  class="home-img">
+                <img src="img/recipe.jpg" alt="photo" >
+            </div>
+            
+        </section>
+
+        <section id="About">
+
+            <div class="about-img">
+                <img src="img/make.jpg" alt="janaka">
+            </div>
+
+            <div class="about-content">
+                <h2>About <span>YumYum</span></h2>
+                <p>Welcome to our recipe website! 
+                    Our mission is to bring the joy of cooking to your kitchen with easy-to-follow,
+                    delicious recipes that cater to all skill levels.
+                    Whether you're a seasoned chef or just starting your culinary journey,
+                    you'll find a diverse selection of recipes that inspire creativity and satisfy your taste buds.
+                    We believe that cooking should be a fun and enjoyable experience, 
+                    and we are dedicated to providing you with the resources and inspiration you need to make every
+                    meal a memorable one. Join us as we explore new flavors, share cooking tips, and celebrate the art 
+                    of home cooking. Happy cooking!
+                </p>
+            </div>
+        </section>
+
+        <section id="Contact">
+            <div><h2 >Contact <span>Us</span></h2></div>
+            
+            <form id="contact-form"  onsubmit="handleSubmit(event)">
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text" placeholder="Full Name">
+                    </div>
+
+                    <div class="input-box">
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="input-box">
+                        <input type="number" placeholder="Phone Number">
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                </div>
+
+                <div class="input-group2">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input style="margin-top: 12px;" type="submit" value="Send Message" class="btn">       
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#">
+                <i class="bx bxl-github"></i>
+            </a>
+
+            <a href="#">
+                <i class="bx bxl-linkedin-square"></i>
+            </a>
+           
+            <a href="#">
+                <i class="bx bxl-twitter"></i>
+            </a>
+        </div>
+
+        <p>&copy; 2024 YumYum Hub</p>
+    </footer>
+
+</body>
+</html>

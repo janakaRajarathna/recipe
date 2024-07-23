@@ -1,0 +1,286 @@
+:root {
+    --primary-color: #423835;
+    --neutral-color: #f7fbfd;
+    --accent-color: #e47045;
+
+    /* --primary-color: #382213;
+    --neutral-color: #fbf2e7;
+    --accent-color: #f7963c; */
+
+    /* --primary-color: #282123;
+    --neutral-color: #fbfffb;
+    --accent-color: #ec5826; */
+}
+
+body {
+    background-color: var(--neutral-color);
+    color: var(--accent-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header h1 span {
+    color: var(--accent-color);
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--neutral-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+.login-btn {
+    position: absolute;
+    top: 9.5%;
+    left: 90%;
+    width: 120px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: var(--accent-color);
+    color: var(--neutral-color);
+    border: 2px solid var(--accent-colorr);
+
+}
+
+.login-btn:hover {
+    background-color: var(--neutral-color);
+    color: var(--accent-color);
+    border: 2px solid var(--neutral-color);
+
+}
+
+/* main {
+    padding: 2rem;
+} */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--neutral-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+#Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+
+
+}
+
+#Home img {
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--primary-color);
+    transition: 0.4s ease-in-out;
+    margin: 2rem;
+
+}
+
+#Home img:hover {
+    box-shadow: 0 0 25px var(--primary-color),
+        0 0 50px var(--primary-color),
+        0 0 100px var(--primary-color);
+
+}
+
+#Home button {
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    width: 150px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: var(--accent-color);
+    color: var(--neutral-color);
+    border: 2px solid var(--accent-color);
+
+}
+
+#Home button:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+
+.home-content h2 {
+    font-size: 3rem;
+    text-align: left;
+    margin: 2rem;
+
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin: 2rem;
+    color: var(--accent-color);
+}
+
+#Home span {
+    color: var(--primary-color);
+}
+
+
+#About {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: var(--primary-color);
+
+}
+
+.about-img img {
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--accent-color);
+    transition: 0.4s ease-in-out;
+    margin: 2rem;
+}
+
+.about-img img:hover {
+    box-shadow: 0 0 25px var(--accent-color),
+        0 0 50px var(--accent-color),
+        0 0 100px var(--accent-color);
+
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    text-align: left;
+    margin: 2rem;
+}
+
+.about-content p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin: 2rem;
+    color: var(--neutral-color);
+}
+
+#About span {
+    color: var(--neutral-color);
+}
+
+#Contact h2 {
+    font-size: 3rem;
+    /* margin: 2rem; */
+    text-align: center;
+    color: var(--accent-color);
+
+}
+
+#Contact span {
+    color: var(--primary-color);
+
+}
+
+#Contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem 0;
+    text-align: center;
+}
+
+
+#Contact .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 30%;
+}
+
+#Contact .input-group {
+    width: 40%;
+}
+
+#Contact form .input-box input,
+#Contact form textarea {
+    width: 70%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    background-color: var(--neutral-color);
+    border-radius: 2rem;
+    border: 2px solid var(--primary-color);
+    margin: 1 rem 0;
+    resize: none;
+}
+
+#Contact .btn {
+    width: 150px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: var(--accent-color);
+    color: var(--neutral-color);
+    border: 2px solid var(--accent-color)
+}
+
+#Contact .btn:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color)
+}
+
+
+footer .social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    border: 2px solid var(--neutral-color);
+    border-radius: 50%;
+    color: var(--neutral-color);
+    margin: 3rem 0.5rem;
+    transition: 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: var(--neutral-color);
+    background-color: var(--accent-color);
+    transform: scale(1.2)translateY(-5px);
+    box-shadow: 0 0 25px var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+footer .social-icons {
+    text-align: center;
+}
